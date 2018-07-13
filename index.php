@@ -50,6 +50,22 @@
                 <p>Cliente 2</p>
             </div>
         </div>
+
+        <div id="Jan2019" class="tabcontent">
+	        <div id="dt2019-01-12" class="data">
+				<p>12 de janeiro de 2019</p>
+	        </div>
+            <div id="oferta1" class="dt20190-01-12 oferta">
+                <p>Oferta 1</p>
+                <button style="display: inline-block;float: right;margin: 15px;" type="button">Confirmar viagem</button>
+            </div>
+            <div class="cliente cdt2019-01-12 dt2019-01-12-oferta1">
+                <p>Cliente 1</p>
+            </div>
+            <div class="cliente cdt2019-01-12 dt2019-01-12-oferta1">
+                <p>Cliente 2</p>
+            </div>
+        </div>
     </div>
 </body>
 
