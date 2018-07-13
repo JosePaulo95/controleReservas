@@ -4,7 +4,7 @@ $(document).ready(function(){
     	var data_id = $(this).attr("id");
 
     	if(!$("."+data_id).is(":hidden")){
-    		$(".c"+data_id).slideUp("fase");
+    		$(".c"+data_id).slideUp("fast");
     	}
 
     	$("."+data_id).slideToggle("fast");//id de data compoe a classe da oferta
@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
 });
 
-function openCity(evt, cityName) {
+function showMes(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
