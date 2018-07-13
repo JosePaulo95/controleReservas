@@ -46,5 +46,8 @@ function showTodos(evt) {
     //document.getElementById(cityName).style.display = "block";
     if(evt){
 	    evt.currentTarget.className += " active";
+	}else{
+		tablinks = document.getElementsByClassName("tablinks");
+	    tablinks[0].className += " active";
 	}
 }

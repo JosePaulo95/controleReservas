@@ -3,7 +3,7 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width:882px;
+    width:876px;
 }
 /* Style the buttons inside the tab */
 .tab button {
@@ -29,6 +29,13 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    width: 852px;
+}
+.tablinks{
+	width: 45px;
+}
+#tab_todos{
+	width: auto;
 }
 .tab_ano{
 	text-align: center;
@@ -59,14 +66,14 @@
 .data {
 	background-color: rgb(255,127,39);
 	border: solid 1px #c3c3c3;
-	width: 860px;
+	width: 850px;
 	height: 50px;
 }
 .oferta {
 	background-color: blue;
     border: solid 1px #c3c3c3;
     display: none;
-    width: 840px;
+    width: 830px;
 	height: 50px;
 	margin-left: 20px;
 }
@@ -74,7 +81,7 @@
 	background-color: purple;
     border: solid 1px #c3c3c3;
 	display: none;
-	width: 820px;
+	width: 810px;
 	height: 50px;
 	margin-left: 40px;
 }

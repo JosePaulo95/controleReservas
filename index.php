@@ -55,7 +55,7 @@
 	        <div id="dt2019-01-12" class="data">
 				<p>12 de janeiro de 2019</p>
 	        </div>
-            <div id="oferta1" class="dt20190-01-12 oferta">
+            <div id="oferta1" class="dt2019-01-12 oferta">
                 <p>Oferta 1</p>
                 <button style="display: inline-block;float: right;margin: 15px;" type="button">Confirmar viagem</button>
             </div>

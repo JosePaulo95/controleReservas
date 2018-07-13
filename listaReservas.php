@@ -37,7 +37,7 @@ class ListaReservas {
     public function geraTabs($mes_inicial, $ano_inicial, $qtde_meses){
         $tabs_labels = '<div class="tab">';
 
-        $tabs_labels .= '<button class="active tablinks" onclick="showTodos(event)"> <p class="tab_ano"><br></p><p class="tab_mes">Todos</p> </button>';
+        $tabs_labels .= '<button id="tab_todos" class="tablinks" onclick="showTodos(event)"> <p class="tab_ano"><br></p><p class="tab_mes">Todos</p> </button>';
 
         $mes_inicial--;
         $label_ano = $ano_inicial;
