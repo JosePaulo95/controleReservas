@@ -2,7 +2,7 @@
 
 class ListaReservas {  
     /*private $data = json_decode(
-        "data 1": {
+        '"data 1": {
             "oferta 1": [
                 {"id":1,"name":"Pescador 1"},
                 {"id":2,"name":"Pescador 2"}
@@ -15,12 +15,20 @@ class ListaReservas {
             "oferta 1": [
                 {"id":1,"name":"Pescador 1"}
             ],
-         }
+         }'
     );*/
     private $monthLabels = array("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez");
 
 
     public function show() {
+        $myJSON = json_decode('
+            {"pessoa1":{"name":"John","age":30,"city":"New York"}}
+        ');
+
+        echo $myJSON->pessoa1->name;
+
+
+
         $calendars = '<div style="cursor: pointer;">';
 
         $m = date('m');
