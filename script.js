@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
 });
 
-function showMes(evt, cityName) {
+function showMes(evt, code_mes_ano) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -30,7 +30,13 @@ function showMes(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    var reservas_mes = document.getElementById(code_mes_ano);
+    if(reservas_mes){
+    	reservas_mes.style.display = "block";
+    	document.getElementById("mes_nenhuma_reserva").style.display = "none";
+    }else{
+    	document.getElementById("mes_nenhuma_reserva").style.display = "block";
+    }
     evt.currentTarget.className += " active";
 }
 function showTodos(evt) {

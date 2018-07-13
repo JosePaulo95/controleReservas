@@ -3,7 +3,7 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width:876px;
+    width:872px;
 }
 /* Style the buttons inside the tab */
 .tab button {
@@ -19,9 +19,17 @@
 .tab button:hover {
     background-color: #ddd;
 }
+
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: rgb(255,127,39);
+    color: white;
+}
+.tab button.active .tab_mes {
+
+}
+.tab .tem_algo{
+	background-color: rgb(255,200,150);
 }
 /* Style the tab content */
 .tabcontent {
@@ -29,7 +37,14 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    width: 852px;
+    width: 848px;
+}
+.tabcontentnull {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 848px;
 }
 .tablinks{
 	width: 45px;
@@ -44,7 +59,6 @@
 	margin-top: -1px;
 }
 .tab_mes{
-	font-weight: bold;
 	text-align: center;
 	margin-bottom: -1px;
 	margin-top: -1px;
@@ -52,7 +66,6 @@
 .data > p {
     padding: 5px;
     color: white;
-    font-weight: bold;
 }
 .oferta > p {
     padding: 5px;
@@ -66,14 +79,14 @@
 .data {
 	background-color: rgb(255,127,39);
 	border: solid 1px #c3c3c3;
-	width: 850px;
+	width: 848px;
 	height: 50px;
 }
 .oferta {
 	background-color: blue;
     border: solid 1px #c3c3c3;
     display: none;
-    width: 830px;
+    width: 828px;
 	height: 50px;
 	margin-left: 20px;
 }
@@ -81,7 +94,7 @@
 	background-color: purple;
     border: solid 1px #c3c3c3;
 	display: none;
-	width: 810px;
+	width: 808px;
 	height: 50px;
 	margin-left: 40px;
 }

@@ -66,6 +66,16 @@
                 <p>Cliente 2</p>
             </div>
         </div>
+        <div id="mes_nenhuma_reserva" class="tabcontentnull">
+        	<p>
+        		Companheiro, você ainda não tem reservas para este mês.
+        	</p>
+        </div>
+        <div id="todos_nenhuma_reserva" class="tabcontentnull">
+        	<p>
+        		No momento, não há nenhum pedido de reserva para suas ofertas.
+        	</p>
+        </div>
     </div>
 </body>
 
