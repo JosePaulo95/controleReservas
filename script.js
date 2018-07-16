@@ -19,7 +19,6 @@ $(document).ready(function(){
     	$(str).slideToggle("fast");
     });
 });
-
 function showMes(evt, code_mes_ano) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -33,9 +32,11 @@ function showMes(evt, code_mes_ano) {
     var reservas_mes = document.getElementById(code_mes_ano);
     if(reservas_mes){
     	reservas_mes.style.display = "block";
+    	$("#"+code_mes_ano).fadeIn(100).fadeOut(100).fadeIn(100);
     	document.getElementById("mes_nenhuma_reserva").style.display = "none";
     }else{
     	document.getElementById("mes_nenhuma_reserva").style.display = "block";
+    	$("#mes_nenhuma_reserva").fadeIn(100).fadeOut(100).fadeIn(100);
     }
     evt.currentTarget.className += " active";
 }
@@ -45,6 +46,7 @@ function showTodos(evt) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "block";
     }
+    $(".tabcontent").fadeOut(100).fadeIn(100);
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");

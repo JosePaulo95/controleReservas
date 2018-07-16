@@ -45,6 +45,7 @@
     border: 1px solid #ccc;
     border-top: none;
     width: 848px;
+    background-color: blue;
 }
 .tablinks{
 	width: 45px;
@@ -63,7 +64,7 @@
 	margin-bottom: -1px;
 	margin-top: -1px;
 }
-.data > p {
+.data > p, .tabcontentnull > p {
     padding: 5px;
     color: white;
 }

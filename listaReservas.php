@@ -1,22 +1,8 @@
 <?php
+header("Content-Type: text/html;  charset=ISO-8859-1",true);
 
-class ListaReservas {  
-    /*private $data = json_decode(
-        '"data 1": {
-            "oferta 1": [
-                {"id":1,"name":"Pescador 1"},
-                {"id":2,"name":"Pescador 2"}
-            ],
-            "oferta 2": [
-                {"id":2,"name":"Pescador 1"}
-            ],
-        }, 
-        "data 2": {
-            "oferta 1": [
-                {"id":1,"name":"Pescador 1"}
-            ],
-         }'
-    );*/
+
+class ListaReservas {
     private $monthLabels = array("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez");
     private $myJSON;
 
@@ -91,7 +77,7 @@ class ListaReservas {
                 foreach($this->myJSON->$keyMes as $keyDia => $dia){
                     $content.='
                         <div id="dt'.$keyDia.'" class="data">
-                            <p>'.$keyDia.'</p>
+                            <p>'.$this->diaPorExtenso($keyDia).'</p>
                         </div>
                     ';
                     foreach($this->myJSON->$keyMes->$keyDia as $keyOferta => $oferta){
@@ -155,6 +141,13 @@ class ListaReservas {
 
         $tabs_labels .= '</div>';
         return $tabs_labels;
+    }
+    private function diaPorExtenso($data){
+        setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+        date_default_timezone_set('America/Sao_Paulo');
+        return strftime('%A, %d de %B de %Y', strtotime($data));
+
+        //return $data;// = $dia;
     }
     private function checaMesTemAlgo($index_mes, $label_ano){
         $index = $this->monthLabels[$index_mes];
