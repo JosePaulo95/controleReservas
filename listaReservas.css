@@ -19,7 +19,6 @@
 .tab button:hover {
     background-color: #ddd;
 }
-
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: rgb(255,127,39);
@@ -77,11 +76,17 @@
 	padding: 5px;
 	color: white;
 }
+.data:hover{
+	background-color: rgb(225,110,30);
+}
 .data {
 	background-color: rgb(255,127,39);
 	border: solid 1px #c3c3c3;
 	width: 848px;
 	height: 50px;
+}
+.oferta:hover{
+	background-color: rgb(0,0,200);
 }
 .oferta {
 	background-color: blue;
@@ -91,8 +96,11 @@
 	height: 50px;
 	margin-left: 20px;
 }
+.cliente:hover{
+	background-color: rgb(110,0,110)
+}
 .cliente {
-	background-color: purple;
+	background-color: rgb(150,0,150);
     border: solid 1px #c3c3c3;
 	display: none;
 	width: 808px;
