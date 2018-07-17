@@ -1,12 +1,12 @@
 <?php
 header("Content-Type: text/html;  charset=ISO-8859-1",true);
 
-
 class ListaReservas {
     private $monthLabels = array("Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez");
     private $myJSON;
 
-    public function show() {
+    public function show($poder) {
+        echo $poder;
         $this->myJSON = json_decode('
             {"Jan2019":
                 {
@@ -56,7 +56,7 @@ class ListaReservas {
                 }
             }
         ');
-
+        //$this->myJSON = json_decode($poder);
         $calendars = '<div style="cursor: pointer;">';
 
         $m = date('m');
@@ -151,7 +151,7 @@ class ListaReservas {
     }
     private function checaMesTemAlgo($index_mes, $label_ano){
         $index = $this->monthLabels[$index_mes];
-        $index .= "20".$label_ano;;
+        $index .= "20".$label_ano;
         return array_key_exists($index, $this->myJSON)?"tem_algo":'';
     }
     private function checaQualquerReserva(){

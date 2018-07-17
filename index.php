@@ -6,10 +6,11 @@
 <body>
 	<?php
 		include 'ListaReservas.php';
-		
+		include 'banco.php';
+
 		$list = new ListaReservas();
 		 
-		echo $list->show();
+		echo $list->show($poder);
 	?>
 </body>
 
